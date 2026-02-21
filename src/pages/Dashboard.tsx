@@ -27,17 +27,22 @@ export default function Dashboard() {
               Me enfoco en crear soluciones escalables, limpias y eficientes
               para resolver problemas reales.
             </p>
-            {/* 
-            <button className="mt-8 px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold shadow-md hover:bg-blue-700 hover:scale-105 transition">
-              Contactarme
-            </button>
-            */}
+
+            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+              <a href="https://wa.me/5212224893828?text=Hola%20Angel%2C%20me%20interesa%20tu%20portafolio" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-lg font-semibold shadow-md hover:scale-105 transition">
+                Contactarme por WhatsApp
+              </a>
+
+              <a href="#proyectos" className="inline-block px-6 py-3 border border-gray-200 rounded-lg text-gray-700 hover:bg-gray-50 transition">
+                Ver proyectos
+              </a>
+            </div>
           </div>
 
-          <div className="md:w-1/2 h-[400px] bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
-            <span className="text-white text-xl font-semibold">
-              <img src="/img/image.png" alt="" />
-            </span>
+          <div className="md:w-1/2 flex items-center justify-center p-8">
+            <div className="w-full max-w-md h-[360px] bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl shadow-2xl flex items-center justify-center overflow-hidden transform hover:scale-102 transition">
+              <img src="/img/image.png" alt="avatar" className="object-cover w-full h-full mix-blend-screen" />
+            </div>
           </div>
 
         </div>
@@ -69,6 +74,24 @@ export default function Dashboard() {
               titulo="Frontend Calculadora"
               descripcion="Interfaz en React para simulador de créditos"
               github="https://github.com/AngeL036/creditsim-fronted/tree/main/creditsim-frontend"
+            />
+
+            <Proyectos
+              titulo="ideas"
+              descripcion="Pequeños experimentos y utilidades en TypeScript"
+              github="https://github.com/AngeL036/ideas"
+            />
+
+            <Proyectos
+              titulo="ped"
+              descripcion="Proyectos y scripts en Python (ped)"
+              github="https://github.com/AngeL036/ped"
+            />
+
+            <Proyectos
+              titulo="AppWeb"
+              descripcion="Sitio web y ejemplos en HTML/CSS"
+              github="https://github.com/AngeL036/AppWeb"
             />
 
           </div>
